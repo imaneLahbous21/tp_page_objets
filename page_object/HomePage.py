@@ -4,12 +4,14 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
 class HomePage:
-
+    cookie_button_selector = "#sp-cc-accept"
     hamburguer_menu_selector = "#nav-hamburger-menu"
     side_menu_selector = "#hmenu-canvas"
     livres_menu_selector = "a[data-menu-id='10']"
     tous_les_livres = "ul.hmenu-visible li:nth-of-type(3)"
-    cookie_button_selector = "#sp-cc-accept"
+
+
+
 
     def __init__(self, driver: webdriver.Chrome):
         self.driver = driver
